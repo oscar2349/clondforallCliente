@@ -1,0 +1,32 @@
+<div class="card border-primary mb-3">
+    <div class="card-header">Productos</div>
+    <div class="card-body text-primary">
+        <h5 class="card-title">Listado de Productos</h5>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Id Producto</th>
+                    <th>Cantidad del Producto</th>
+                    <th>id de la preventa</th>
+                    <th>Se efectuo la Venta</th>
+                    <th>Id Factura</th>
+                    <th>Valor en pesos Descontado</th>
+                    <th>Lugar del Despacho</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let producto of productos">
+                    <td>{{ producto.idProducto }}</td>
+                    <td>{{ producto.cantidadProducto}}</td>
+                    <td>{{ producto.idPreventa }}</td>
+                    <td>{{ producto.vendido}}</td>
+                    <td>{{ producto.idFactura }}</td>
+                    <td>{{ producto.valorDescontado }}</td>
+                    <td>{{ producto.lugarDespacho }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
